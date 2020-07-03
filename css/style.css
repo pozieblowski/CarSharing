@@ -1,8 +1,5 @@
 body {
   font-family: "Nunito Sans", sans-serif;
-  background-image: url(../images/Image.png);
-  height: 100vh;
-  width: 100vw;
 }
 
 .container {
@@ -11,15 +8,20 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 1371px;
+  width: 100%;
+  background-color: black;
+  opacity: 50%;
 }
 .logo {
   background-image: url(../images/Icon.svg);
-  width: 31px;
-  padding: 0 35px 10px 35px;
+  margin: 50px;
+  padding: 0 60px 10px 60px;
   background-repeat: no-repeat;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
-h1 {
+.logo-title {
   color: #ff0000;
   font-size: 35px;
   text-transform: uppercase;
@@ -28,12 +30,12 @@ h1 {
   align-items: flex-end;
 }
 
-span {
+.logo-title span {
   color: #fff;
   font-size: 35px;
 }
 
-ul {
+.page-nav-list {
   text-transform: uppercase;
   padding: 20px;
   display: flex;
@@ -48,7 +50,18 @@ a {
   padding: 40px;
 }
 
-h2 {
+.background-image {
+  background-image: url(../images/Image.png);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.banner {
+}
+.banner-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +70,7 @@ h2 {
   text-transform: uppercase;
 }
 
-p {
+.banner-text {
   color: white;
   font-size: 16px;
   display: flex;
@@ -65,14 +78,23 @@ p {
   align-items: center;
 }
 
-.a {
+.banner-button {
   font-size: 16px;
-  color: white;
-  background-color: red;
-  width: 218px;
-  height: 68px;
-  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+}
+
+.banner-button a {
+  border-radius: 50%;
+}
+
+.banner-button-first {
+  color: white;
+  background-color: red;
+}
+.banner-button-second {
+  color: red;
+  background-color: white;
 }
