@@ -1,5 +1,8 @@
 body {
   font-family: "Nunito Sans", sans-serif;
+  background-image: url(../images/Image.png);
+  height: 100vh;
+  width: 100vw;
 }
 
 .container {
@@ -43,4 +46,33 @@ a {
   color: white;
   font-size: 16px;
   padding: 40px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  color: white;
+  text-transform: uppercase;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  width: 218px;
+  height: 68px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
